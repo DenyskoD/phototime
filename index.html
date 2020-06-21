@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- SVG -->
+        <svg style="display:none;">
+            <symbol id="twitter" viewBox="0 0 512 512">
+                <g>
+                    <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                        c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                        c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                        c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                        c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                        c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                        C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                        C480.224,136.96,497.728,118.496,512,97.248z"/>
+                </g>
+            </symbol>
+            <symbol id="flickr" viewBox="0 0 186 186">
+                <g>
+                    <path d="M186,24.333C186,10.894,175.106,0,161.667,0H24.333C10.894,0,0,10.894,0,24.333v137.333C0,175.106,10.894,186,24.333,186
+                    h137.333C175.106,186,186,175.106,186,161.667V24.333z M63.833,113.093c-11.097,0-20.093-8.996-20.093-20.093
+                    s8.996-20.093,20.093-20.093S83.926,81.903,83.926,93S74.93,113.093,63.833,113.093z M122.833,113.093
+                    c-11.097,0-20.093-8.996-20.093-20.093s8.996-20.093,20.093-20.093S142.926,81.903,142.926,93S133.93,113.093,122.833,113.093z"/>
+                </g>
+            </symbol>
+            <symbol id="basket" viewBox="0 0 512 512">
+                <g>
+                    <path d="M256,0C115.04,0,0,115.05,0,256c0,140.96,115.05,256,256,256c140.96,0,256-115.05,256-256C512,115.04,396.95,0,256,0z   M429.64,111.51c31.96,38.34,51.47,87.39,52.31,140.89c-40.06-9.37-84.55-10-129.86-1.74c-11.79,2.15-23.58,4.88-35.3,8.16  c-3.9-10.61-8.04-21.13-12.44-31.55c-4.49-10.63-9.23-21.08-14.19-31.38C344.15,175.27,402.65,144.57,429.64,111.51z M256,30  c58.82,0,112.45,22.59,152.7,59.54C393,110.95,348.26,142.12,276.48,169c-25.06-46.66-55.11-89.54-89.83-128.1  C208.51,33.83,231.82,30,256,30z M156.95,52.9c35.41,37.93,65.87,80.29,90.96,126.05c-74.68,24.17-150.29,34.03-212.46,27.66  C50.59,138.96,96.14,82.67,156.95,52.9z M30,256c0-6.64,0.31-13.21,0.87-19.7c13.72,1.45,28.03,2.18,42.82,2.18  c58.33,0,123.86-11.22,188.21-32.53c9.82,20.1,18.65,40.78,26.44,61.97c-25.09,9.02-49.51,20.49-72.44,34.14  c-56.22,33.47-97.35,76.53-114.41,118.71C57.52,379.51,30,320.91,30,256z M256,482c-48.29,0-93.09-15.23-129.86-41.14  c11.4-38.52,49.96-80.19,105.11-113.02c19.43-11.58,42.15-22.49,66.88-31.36c17.53,55.1,28.27,113.26,31.68,173.13  C306.67,477.63,281.84,482,256,482z M359.07,457.1c-4.16-58.32-15.02-115.1-32.45-169.64c48.6-13.36,102.58-17.84,153.77-4.56  C471.33,358.91,424.41,423.47,359.07,457.1z"/>
+                </g>
+            </symbol>
+            <symbol id="submit" viewBox="0 0 45.102 45.102">
+                <g>
+                    <path d="M17.021,44.403c0.427,0.45,0.995,0.698,1.601,0.698c0.641,0,1.25-0.287,1.672-0.791
+                        c8.155-9.735,19.136-21.879,23.248-24.062c0.906-0.482,1.515-1.456,1.515-2.423V1.933C45.056,0.678,44.137,0,43.272,0
+                        c-0.314,0-0.795,0.086-1.283,0.494C38.922,3.05,24.179,15.795,19.271,28.458l-4.691-7.624c-0.63-1.02-2.088-1.386-3.122-0.783
+                        L1.102,26.075c-0.599,0.349-0.981,0.924-1.046,1.579c-0.065,0.654,0.194,1.294,0.714,1.755
+                        C2.909,31.309,13.747,40.952,17.021,44.403z M12.378,22.984l5.636,9.16c0.378,0.613,0.96,0.965,1.597,0.965
+                        c0.613,0,1.437-0.375,1.736-1.432c3.091-10.901,15.443-22.661,20.707-27.29v13.253c-5.462,2.98-18.68,18.348-23.482,24.054
+                        c-3.429-3.461-11.281-10.499-14.85-13.674L12.378,22.984z"/>
+                </g>
+            </symbol>
+            <symbol id="apple" viewBox="0 0 512 512"> 
+                <g>
+                    <path d="M185.255,512c-76.201-0.439-139.233-155.991-139.233-235.21c0-129.404,97.075-157.734,134.487-157.734   c16.86,0,34.863,6.621,50.742,12.48c11.104,4.087,22.588,8.306,28.975,8.306c3.823,0,12.832-3.589,20.786-6.738   c16.963-6.753,38.071-15.146,62.651-15.146c0.044,0,0.103,0,0.146,0c18.354,0,74.004,4.028,107.461,54.272l7.837,11.777   l-11.279,8.511c-16.113,12.158-45.513,34.336-45.513,78.267c0,52.031,33.296,72.041,49.292,81.665   c7.061,4.248,14.37,8.628,14.37,18.208c0,6.255-49.922,140.566-122.417,140.566c-17.739,0-30.278-5.332-41.338-10.034   c-11.191-4.761-20.845-8.862-36.797-8.862c-8.086,0-18.311,3.823-29.136,7.881C221.496,505.73,204.752,512,185.753,512H185.255z"/>
+                    <path d="M351.343,0c1.888,68.076-46.797,115.304-95.425,112.342C247.905,58.015,304.54,0,351.343,0z"/>
+                </g>
+            </symbol>
+            <symbol id="android" viewBox="0 0 512.12 512.12">
+                <g>
+                    <path  d="M74.727,170.787c-17.673,0-32,14.327-32,32V352.12c0,17.673,14.327,32,32,32s32-14.327,32-32
+                        V202.787C106.727,185.114,92.4,170.787,74.727,170.787z"/>
+                    <path  d="M437.393,170.787c-17.673,0-32,14.327-32,32V352.12c0,17.673,14.327,32,32,32s32-14.327,32-32
+                        V202.787C469.393,185.114,455.067,170.787,437.393,170.787z"/>
+                    <path  d="M373.393,170.787H138.727c-5.891,0-10.667,4.776-10.667,10.667V352.12
+                        c-0.005,25.348,17.831,47.197,42.667,52.267v75.733c0,17.673,14.327,32,32,32s32-14.327,32-32v-74.667h42.667v74.667
+                        c0,17.673,14.327,32,32,32s32-14.327,32-32v-75.733c24.836-5.07,42.672-26.919,42.667-52.267V181.454
+                        C384.06,175.563,379.284,170.787,373.393,170.787z"/>
+                    <path  d="M333.607,44.323l26.005-25.984c4.237-4.093,4.354-10.845,0.262-15.083
+                        c-4.093-4.237-10.845-4.354-15.083-0.262c-0.089,0.086-0.176,0.173-0.262,0.262L314.236,33.55
+                        c-37.102-16.117-79.229-16.117-116.331,0L167.612,3.235c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82
+                        l25.984,26.005c-31.677,20.96-50.649,56.481-50.453,94.464c0,5.891,4.776,10.667,10.667,10.667h234.667
+                        c5.891,0,10.667-4.776,10.667-10.667C384.256,100.804,365.284,65.283,333.607,44.323z"/>
+                </g>
+            </symbol>
+        </svg>
+
+    <header class="header">
+        
+        <div class="header__container">
+            <nav class="nav">
+                <a class="nav__link">Home</a>
+                <a class="nav__link">PhotoApp</a>
+                <img  class="nav__icon" src="img/header_icon.png" alt="">
+                <a class="nav__link">Design</a>
+                <a class="nav__link">Download</a>
+            </nav>
+        </div>
+
+        <div class="header__inner">
+            <div class="header__inner__container">
+                <h1 class="header__title">Your life , a photo</h1>
+                <h3 class="header__subtitle">print your life in a simple photo</h3>
+                <a class="content__button" href="#">Get Started</a>
+            </div>
+        </div>
+
+        <div class="header__social">
+            <a href="#" class="social__item" target="_black">
+                <svg class="social__icon">
+                    <use xlink:href="#twitter"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__item" target="_black">
+                <svg class="social__icon">
+                    <use xlink:href="#flickr"></use>
+                </svg>
+            </a>
+            <a href="#" class="social__item" target="_black">
+                <svg class="social__icon">
+                    <use xlink:href="#basket"></use>
+                </svg>
+            </a>
+        </div> <!-- /header social-->
+    </header>
+    <section class="photo">
+        <div class="container">
+            <div class="photo__inner">
+                <h2 class="inner__title">Rappresent your life with a 
+                    simple photo</h2>
+                <p class="inner__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et dolore <br>
+                    magna aliqua. Ut <b>enim ad minim</b> veniam, quis <br>
+                    nostrud exercitation ullamco laboris nisi <br>
+                    ut aliquip ex ea commodo consequat.
+                </p>
+                <a class="content__button" href="#">Get Started</a>
+            </div>
+            <div class="photo__img">
+                <img src="img/hand_03.png" alt="">
+            </div>
+        </div> <!-- /container-->
+    </section> <!-- /section-->
+
+    <section class="design">
+        <div class="container">
+            <div class="design__photo">
+                <img src="img/iphone_03.png" alt="">
+            </div>
+            <div class="design__inner">
+                <h2 class="inner__title">Design</h2>
+                <p class="inner__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et dolore <br>
+                    magna aliqua. Ut <b>enim ad minim</b> veniam, quis <br>
+                    nostrud exercitation ullamco laboris nisi <br>
+                    ut aliquip ex ea commodo consequat.
+                </p>
+                <a class="content__button" href="#">Learn More</a>
+
+                <div class="design__slide">
+                    <div class="slide__text">
+                        <p>01/05</p>
+                    </div>
+                    <div class="slides">
+                        <div class="slide__left"></div>
+                        <div class="slide__right"></div> 
+                    </div>
+                </div> <!-- /design slide-->
+            </div> <!-- /design inner-->
+        </div> <!-- /container-->
+
+    </section> <!-- /section-->
+
+    <section class="community">
+        <div class="container">
+            <div class="slides community--slides">
+                <div class="slide__left"></div>
+                <div class="slide__right"></div> 
+            </div> <!-- slider -->
+            <div class="community__inner">
+                <div class="community__item">
+                    <div class="community__desc">
+                        <img class="community__icon" src="img/photo_icon.png" alt="">
+                        <h2 class="community__title">our community</h2>
+                        <p class="community__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    </div>
+                </div>
+
+
+                <div class="community__img">
+
+                    <div class="community__photo" >
+                        <img src="img/community/1.jpg" alt="" >
+                    </div>
+                    <div class="photo__text">Super Photo</div>
+
+                </div>
+                <div class="community__img">
+
+                    <div class="community__photo" > 
+                        <img src="img/community/2.jpg" alt="" >
+                    </div>
+                    <div class="photo__text">Super Photo</div>
+
+                </div>
+            </div>  <!-- /inner-->
+
+        </div> <!-- /container-->
+
+    </section>   <!-- /community-->
+
+    <section class="subsribe">
+        <div class="subscribe__container">
+            <h2 class="subsribe__title">subscribe to us community</h2>
+            <div class="inputs">
+                <input class="input__email" type="email" placeholder="YOUR EMAIL"> 
+                <button class="submit__button" type="submit">
+                <svg class="submit__icon">
+                    <use xlink:href="#submit"></use>
+                </svg>
+                </button>
+            </div>
+        </div> <!-- /container-->
+
+    </section> <!-- /subscribe-->
+
+    <section class="download">
+        <div class="download__container">
+            <h2 class="download__title">Download It</h2>
+            <p class="download_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="download_buttons">
+                <a class="content__button  button--download">Apple Store  
+                    <div class="download__icons">
+                        <svg class="download__icon">
+                        <use xlink:href="#apple"></use>
+                        </svg>
+                    </div>
+                </a>
+                <a class="content__button  button--download">Play Store
+                    <div class="download__icons">
+                        <svg class="download__icon">
+                        <use xlink:href="#android"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div> <!-- /download__buttons-->
+        </div> <!-- /download__container-->
+
+    </section> <!-- /download-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__links">
+                    <a class="footer__link" href="#">Credits</a>
+                    <a class="footer__link" href="#">Privacy</a>
+                    <a class="footer__link" href="#">Our Team</a>
+                </div>
+                <copyright class="footer__copyright">
+                    <p>Copyright by phototime - all right reserved</p>
+                </copyright>
+            </div>
+            <div class="footer__icon">
+                <img src="img/photo_icon.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
