@@ -137,8 +137,7 @@ h1,h2,h3,h4,h5,h6,p {
     position: absolute;
     z-index: 1;
     top:80px;
-    right:180px;
-   
+    right:180px;   
 }
 .photo__inner {
     width:100%;
@@ -282,7 +281,6 @@ h1,h2,h3,h4,h5,h6,p {
 .community__photo {
     background: linear-gradient(to bottom,#16a085, #60d3bc);
     transition: transform 0.2s linear;
-    cursor: pointer;
 }
 .community__photo img {
     display:block;
