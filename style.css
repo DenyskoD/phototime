@@ -268,6 +268,7 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: #61445f;
     width: 370px;
     position: relative;
+    cursor: pointer;
 }
 .community__img:hover .photo__text {
     opacity : 1;
@@ -281,6 +282,7 @@ h1,h2,h3,h4,h5,h6,p {
 .community__photo {
     background: linear-gradient(to bottom,#16a085, #60d3bc);
     transition: transform 0.2s linear;
+    cursor: pointer;
 }
 .community__photo img {
     display:block;
