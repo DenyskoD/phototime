@@ -137,8 +137,7 @@ h1,h2,h3,h4,h5,h6,p {
     position: absolute;
     z-index: 1;
     top:80px;
-    right:180px;
-   
+    right:180px;   
 }
 .photo__inner {
     width:100%;
@@ -268,6 +267,7 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: #61445f;
     width: 370px;
     position: relative;
+    cursor: pointer;
 }
 .community__img:hover .photo__text {
     opacity : 1;
@@ -429,7 +429,7 @@ h1,h2,h3,h4,h5,h6,p {
     letter-spacing: 0.1rem;
     margin-bottom: 15px;
 }
-.download_text {
+.download__text {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
@@ -438,20 +438,21 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.5rem;
     margin-bottom: 50px;
 }
-.download_buttons {
+.download__buttons {
+    width: 572px;
     display : flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin : 0 auto;
 }
 .button--download {
-    margin-left : 10px;
-    margin-right : 10px;
     width: 296px;
     text-align: start;
     background-color: #1abc9c;
     position: relative;
-    transition: background 0.1 linear;
-    transition: opacity 0.1 linear;
+    transition: background-color 0.1s linear , opacity 0.1s linear , fill 0.1s linear;
     cursor: pointer;
+    margin : 0 10px;
 }
 .button--download:hover {
     opacity: 1;
@@ -477,8 +478,8 @@ h1,h2,h3,h4,h5,h6,p {
     top : 0;
     right: 0;
     z-index: 1;
-    transition: background 0.1 linear;
-    transition: opacity 0.1 linear;
+    transition: background-color 0.1s linear;
+    transition: opacity 0.1s linear;
     cursor: pointer;
 }
 .download__icon {
@@ -540,3 +541,126 @@ h1,h2,h3,h4,h5,h6,p {
     color : #373737;
     letter-spacing: 0.2rem;
 }
+
+
+
+/* MEDIA
+================= */
+
+@media (max-width: 1024px) {
+    .container,
+    .download__container {
+        padding : 0 30px;
+        overflow: hidden;
+        width : 1000px;
+    }
+}
+@media (max-width: 990px) {
+    .header {
+        width : 1000px;
+        padding : 40px 50px 0;
+    }
+    .container,
+    .download__container {
+        padding : 0 50px;
+        overflow: hidden;
+        width: 900px;
+    }
+    .community--container{
+        padding : 0;
+    }
+    .photo {
+        width: 1000px;
+    }
+    .photo__img {
+        right : 90px;
+    }
+    .subsribe {
+        width: 1000px;
+    }
+    .community {
+        width: 1000px;
+    }
+    .community--container {
+        display : flex;
+        flex-wrap: wrap;
+    }
+    .community__inner {
+        display : flex;
+        flex-wrap: wrap;
+        width: 100%;
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .community__item {
+        width : 80%;
+        margin: 0 auto;
+    }
+    .community__desc {
+        margin: 0 auto;
+    }
+    .community__photos {
+        width : 45%;
+        margin : 0 10px;
+    }
+    .community__photos:last-child {
+        margin-left : 40px;
+    }
+    .community--slides {
+        position: absolute;
+        z-index: 1;
+        right: 80px;
+        transform: translateY(880%);
+    }
+    .download__container {
+        padding-bottom: 40px;
+    }
+    .download__buttons {
+        height:20px;
+    }
+    .download {
+        width: 1000px;
+    }
+    .footer {
+        width: 1000px;
+    }
+}
+@media (max-width: 860px) {
+    .community--slides {       
+        right: -35px;
+    }
+    .photo__img {
+        right : 50px;
+    }
+}
+
+@media (max-width: 770px) {
+    .community--slides {       
+        right: -130px;
+    }
+}
+@media (max-width: 650px) {
+    .community--slides {       
+        right: -245px;
+    }
+}
+ 
+@media (max-width: 575px) {
+    .community--slides {       
+        right: -320px;
+    }
+}
+
+@media (max-width: 420px) {
+    .community--slides {       
+        right: -475px;
+    }
+}
+
+@media (max-width: 375px) {
+    .community--slides {       
+        right: -510px;
+    }
+}
+
