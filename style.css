@@ -59,6 +59,10 @@ h1,h2,h3,h4,h5,h6,p {
 .nav__link:hover {
     opacity: 0.8;  
 }
+/* burger */
+.burger {
+    display : none;
+}
 
 /* header inner container */
 .header__inner__container{
@@ -87,7 +91,7 @@ h1,h2,h3,h4,h5,h6,p {
     letter-spacing: 0.2rem;
 }
 .content__button {
-    padding : 20px 30px ;
+    padding : 20px 70px ;
     text-transform: uppercase;
     color : #fff;
     font-weight: bold;
@@ -289,19 +293,19 @@ h1,h2,h3,h4,h5,h6,p {
 
 .photo__text {
 
-        width: 100%;
-        color : #362535;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 18px;
-        text-align: center;
-        position: absolute;
-        opacity: 0;
-        top:50%;
-        left:0;
-        z-index: 2;
-        transform: translate3d(0, -50% , 0);
-        transition: opacity 0.2s linear;
+    width: 100%;
+    color : #362535;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    top:50%;
+    left:0;
+    z-index: 2;
+    transform: translate3d(0, -50% , 0);
+    transition: opacity 0.2s linear;
     
 }
 .slides.community--slides {
@@ -320,7 +324,7 @@ h1,h2,h3,h4,h5,h6,p {
     justify-content: space-between;
 }
 .subscribe__container {
-    width: 512px;
+    max-width: 512px;
     margin : auto;
     text-align: center;
 
@@ -336,8 +340,9 @@ h1,h2,h3,h4,h5,h6,p {
 /* input */
 .inputs {
     width: 340px;
+    display : flex;
     text-align: center;
-    margin-left : -55px;
+    margin : 0 auto;
 }
 .input__email {
     width: 100%;
@@ -416,7 +421,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .download__container {
-    width: 896px;
+    max-width: 896px;
     text-align: center;
 }
 
@@ -439,30 +444,39 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 50px;
 }
 .download__buttons {
-    width: 572px;
-    display : flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 640px;
+    display : inline-block;
+    align-items: start;
     margin : 0 auto;
 }
-.button--download {
-    width: 296px;
+.download__button {
+    width: 297px;
+    padding-left : 30px;
+    height: 56px;
+    border : none;
     text-align: start;
+    text-transform: uppercase;
+    color : #fff;
+    font-weight: bold;
     background-color: #1abc9c;
-    position: relative;
-    transition: background-color 0.1s linear , opacity 0.1s linear , fill 0.1s linear;
+    text-decoration: none;
+    border-radius: 3px;
+    letter-spacing: .2rem;
+    transition: background-color 0.1s linear , opacity 0.1s linear , fill 0.1s linear , color 0.1s linear;
     cursor: pointer;
+    position: relative;
     margin : 0 10px;
 }
-.button--download:hover {
+.download__button:hover {
     opacity: 1;
     background-color: #16a085;
+    color : #333;
 }
-.button--download:hover .download__icons {
+.download__button:hover .download__icons {
     opacity: 1;
     background-color: #1abc9c;
 }
-.button--download:hover .download__icon {
+.download__button:hover .download__icon {
     opacity: 1;
     fill : #333;
 }
@@ -470,11 +484,10 @@ h1,h2,h3,h4,h5,h6,p {
     height: 30px;
     width: 30px;
     background-color: #16a085;
-    padding : 26px;
+    padding : 28px;
     position: absolute;
-    border-top-right-radius: 1px solid transparent;
-    border-bottom-right-radius: 1px solid transparent;
-    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     top : 0;
     right: 0;
     z-index: 1;
@@ -487,8 +500,8 @@ h1,h2,h3,h4,h5,h6,p {
     height: 30px;
     width: 30px;
     position: absolute;
-    top : 10px;
-    right: 11px;
+    top : 11px;
+    right: 13px;
     z-index: 2;
 }
 
@@ -541,6 +554,7 @@ h1,h2,h3,h4,h5,h6,p {
     color : #373737;
     letter-spacing: 0.2rem;
 }
+
 
 
 
@@ -633,12 +647,14 @@ h1,h2,h3,h4,h5,h6,p {
     .photo__img {
         right : 50px;
     }
+   
 }
 
 @media (max-width: 770px) {
     .community--slides {       
         right: -130px;
     }
+    
 }
 @media (max-width: 650px) {
     .community--slides {       
