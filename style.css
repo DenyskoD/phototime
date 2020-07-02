@@ -568,6 +568,9 @@ h1,h2,h3,h4,h5,h6,p {
         overflow: hidden;
         width : 1000px;
     }
+    .download__text {
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 990px) {
     .header {
@@ -633,6 +636,9 @@ h1,h2,h3,h4,h5,h6,p {
     .download__buttons {
         height:20px;
     }
+    .download__text {
+        margin-bottom: 40px;
+    }
     .download {
         width: 1000px;
     }
@@ -647,6 +653,9 @@ h1,h2,h3,h4,h5,h6,p {
     .photo__img {
         right : 50px;
     }
+    .download__text {
+        margin-bottom: 40px;
+    }
    
 }
 
@@ -654,11 +663,17 @@ h1,h2,h3,h4,h5,h6,p {
     .community--slides {       
         right: -130px;
     }
+    .download__text {
+        margin-bottom: 40px;
+    }
     
 }
 @media (max-width: 650px) {
     .community--slides {       
         right: -245px;
+    }
+    .download__text {
+        margin-bottom: 40px;
     }
 }
  
@@ -666,17 +681,26 @@ h1,h2,h3,h4,h5,h6,p {
     .community--slides {       
         right: -320px;
     }
+    .download__text {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 420px) {
     .community--slides {       
         right: -475px;
     }
+    .download__text {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 375px) {
     .community--slides {       
         right: -510px;
+    }
+    .download__text {
+        margin-bottom: 40px;
     }
 }
 
