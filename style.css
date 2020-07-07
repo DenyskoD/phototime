@@ -625,17 +625,21 @@ h1,h2,h3,h4,h5,h6,p {
 }
 @media (max-width: 990px) {
     .header {
-        width : 1000px;
+        max-width : 1000px;
         padding : 40px 50px 0;
     }
     .container,
     .download__container {
         padding : 0 50px;
         overflow: hidden;
-        width: 900px;
+        max-width: 900px;
     }
     .community--container{
         padding : 0;
+    }
+    /* photo */
+    .photo__img {
+        right: 6%;
     }
     /* design */
     .design {
@@ -645,13 +649,13 @@ h1,h2,h3,h4,h5,h6,p {
         margin-right: 80px;
     }
     .photo {
-        width: 1000px;
+        max-width: 1000px;
     }
     .subsribe {
-        width: 1000px;
+        max-width: 1000px;
     }
     .community {
-        width: 1000px;
+        max-width: 1000px;
     }
     .community--container {
         display : flex;
@@ -689,24 +693,16 @@ h1,h2,h3,h4,h5,h6,p {
         margin-bottom: 40px;
     }
     .download {
-        width: 1000px;
+        max-width: 1000px;
         padding-bottom: 20px;
     }
     .footer {
-        width: 1000px;
+        max-width: 1000px;
     }
 }
 @media (max-width: 860px) {
-    .download__text {
-        margin-bottom: 40px;
-    }
-   
-}
 
-@media (max-width: 770px) {
-    .download__text {
-        margin-bottom: 40px;
-    }
+    /* nav */
     .nav__link {
         display : none;
     }
@@ -719,27 +715,19 @@ h1,h2,h3,h4,h5,h6,p {
         left: 45%;
         z-index: 1;
     }
-    .community__item {
-        margin-bottom: 20px;
-    }
-    .subsribe {
-        height: 500px;
-    }
-    
-    
-}
-@media (max-width: 650px) {
     .download__text {
         margin-bottom: 40px;
     }
-    .header {
-        height: 600px;
-    }
-
     /* photo */
+    .photo__img {
+        display : none;
+    }
     .photo {
         padding-top: 60px;
         height: 450px;
+    }
+    .photo .container {
+        max-width: 650px;
     }
     .photo__img {
         display : none;
@@ -749,12 +737,13 @@ h1,h2,h3,h4,h5,h6,p {
         display: flex;
         flex-direction: column;
         max-width: 650px;
+        width: 100%;
     }
-    .photo__inner > .inner__title {
+    .inner__title {
         text-align: center;
         font-size: 23px;
     }
-    .photo__inner > .inner__text {
+    .inner__text {
         text-align: center;
         font-size: 16px;
     }
@@ -763,18 +752,48 @@ h1,h2,h3,h4,h5,h6,p {
         font-size: 16px
     }
 
-    /* design */
+    /* design  */
+     .design {
+        height: auto;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .design .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 50px;
+        margin: 0 auto;
+    }
     .design__inner {
-        max-width: 600px
+        width: 100%;
+        max-width: 650px;
+        order: -1;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
     }
-    .design__inner > .inner__title {
-        font-size: 23px;
+    .design__inner .inner__text {
+        margin-bottom: 10px;
     }
-    .design__inner > .inner__text {
-        font-size: 13px;
+    .design--btn {
+        margin : 0 auto 20px;
+        font-size: 16px
     }
     .design__photo {
-        margin-right: 60px;
+        margin: 0;
+        width: auto;
+    }
+    .design__slide {
+        position: absolute;
+        top: 80%;
+        right: 10%;
+    }
+    
+    .download__text {
+        margin-bottom: 40px;
     }
 
     /* community */
@@ -812,17 +831,21 @@ h1,h2,h3,h4,h5,h6,p {
         width: 360px;
         font-size: 18px;
     }
-    .button__name {
-        height: 60px;
+    /* subscribe */
+    .subsribe {
+        height: 500px;
     }
     /* download */
     .download {
         padding-top: 60px;
     }
+    .download__container {
+        max-width: 730px;
+    }
     .download__text {
         margin-bottom: 20px;
         text-align: center;
-        font-size: 12px;
+        font-size: 11px;
     }
     .download__title {
         font-size: 25px;
@@ -836,24 +859,19 @@ h1,h2,h3,h4,h5,h6,p {
         margin-bottom: 10px;
     }
 
-
-}
- 
-@media (max-width: 575px) {
-    .download__text {
-        margin-bottom: 40px;
+    /* footer */
+    .footer__icon {
+        display : none;
+    }
+    .footer .container {
+        justify-content: center;
+    }
+    .footer__links {
+        text-align: center;
     }
 }
 
-@media (max-width: 420px) {
-    .download__text {
-        margin-bottom: 40px;
-    }
-}
-
-@media (max-width: 375px) {
-    .download__text {
-        margin-bottom: 40px;
-    }
+@media (max-width:770px) {
+    
 }
 
