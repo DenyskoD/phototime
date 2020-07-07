@@ -231,7 +231,7 @@ h1,h2,h3,h4,h5,h6,p {
 .slide__text {
     margin-top : 70px;
     font-weight: 700;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1rem;c
 
 }
 .slides {
@@ -822,13 +822,13 @@ h1,h2,h3,h4,h5,h6,p {
         top: -35px;
     }
     .community__desc {
-        width: 380px;
+        width: 320px;
     }
     .community__title {
         font-size : 22px;
     }
     .community__text {
-        width: 360px;
+        width: 325px;
         font-size: 18px;
     }
     /* subscribe */
