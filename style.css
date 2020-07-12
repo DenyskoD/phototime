@@ -432,8 +432,6 @@ h1,h2,h3,h4,h5,h6,p {
 .submit__button {
     width: 55px;
     height: 54px;
-    border: 2px solid #16a085;
-    border-bottom: 3px solid #16a085;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     background-color: #16a085;
