@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <!-- SVG -->
@@ -71,15 +72,15 @@
             </symbol>
         </svg>
 
-    <header class="header">
+    <header class="header" id="header">
         
         <div class="header__container">
-            <nav class="nav">
-                <a class="nav__link">Home</a>
-                <a class="nav__link">PhotoApp</a>
+            <nav class="nav" id="nav">
+                <a class="nav__link" data-scroll="#header">Home</a>
+                <a class="nav__link" data-scroll="#community">PhotoApp</a>
                 <img  class="nav__icon" src="img/header_icon.png" alt="">
-                <a class="nav__link">Design</a>
-                <a class="nav__link">Download</a>
+                <a class="nav__link" data-scroll="#design">Design</a>
+                <a class="nav__link" data-scroll="#download">Download</a>
                 <div class="burger">
                     <span class="burger__item">Burger Menu</span>
                 </div>
@@ -90,7 +91,7 @@
             <div class="header__inner-container">
                 <h1 class="header__title">Your life , a photo</h1>
                 <h3 class="header__subtitle">print your life in a simple photo</h3>
-                <a class="content__button" href="#">Get Started</a>
+                <a class="content__button" href="#" data-scroll="#download">Get Started</a>
             </div>
         </div>
 
@@ -112,7 +113,7 @@
             </a>
         </div> <!-- /header social-->
     </header>
-    <section class="photo">
+    <section class="photo" id="photo">
         <div class="container">
             <div class="photo__inner">
                 <h2 class="inner__title">Rappresent your life with a 
@@ -124,7 +125,7 @@
                     nostrud exercitation ullamco laboris nisi <br>
                     ut aliquip ex ea commodo consequat.
                 </p>
-                <a class="content__button photo-btn" href="#">Get Started</a>
+                <a class="content__button photo-btn" href="#" data-scroll="#download">Get Started</a>
             </div>
             <div class="photo__img">
                 <img src="img/hand_03.png" alt="">
@@ -132,7 +133,7 @@
         </div> <!-- /container-->
     </section> <!-- /section-->
 
-    <section class="design">
+    <section class="design" id="design">
         <div class="container">
             <div class="design__photo">
                 <img src="img/iphone_03.png" alt="">
@@ -146,7 +147,7 @@
                     nostrud exercitation ullamco laboris nisi <br>
                     ut aliquip ex ea commodo consequat.
                 </p>
-                <a class="content__button design--btn" href="#">Learn More</a>
+                <a class="content__button design--btn" href="#" >Learn More</a>
 
                 <div class="design__slide">
                     <div class="slide__text">
@@ -162,7 +163,7 @@
 
     </section> <!-- /section-->
 
-    <section class="community">
+    <section class="community" id="community">
         <div class="container community--container">
             
             <div class="community__inner">
@@ -197,7 +198,7 @@
 
     </section>   <!-- /community-->
 
-    <section class="subsribe">
+    <section class="subsribe" id="subscribe">
         <div class="subscribe__container">
             <h2 class="subsribe__title">subscribe to us community</h2>
             <div class="inputs">
@@ -212,7 +213,7 @@
 
     </section> <!-- /subscribe-->
 
-    <section class="download">
+    <section class="download" id="download">
         <div class="download__container">
             <h2 class="download__title">Download It</h2>
             <p class="download__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -237,7 +238,7 @@
 
     </section> <!-- /download-->
 
-    <footer class="footer">
+    <footer class="footer" >
         <div class="container">
             <div class="footer__items">
                 <div class="footer__links">
@@ -254,6 +255,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 
     </body>
 </html>
